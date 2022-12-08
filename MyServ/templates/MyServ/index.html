@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+
+{% for product in object_list %}
+    {{ product }}
+    {{ product.price }}
+    {{ produc.description }}
+    {{ product.category }}
+    <img src="/media/{{ product.photo }}" alt="">
+{% endfor %}
+
+
+
+</body>
+</html>
